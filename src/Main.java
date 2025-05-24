@@ -27,10 +27,9 @@ public class Main {
                 .sorted()
                 .forEach(k->System.out.print(k+","));*/
 
-        /*
 
  // -------getting the average value of the array----
-        System.out.println(Arrays.stream(a).average().getAsDouble());*/
+        //System.out.println(Arrays.stream(a).average().getAsDouble());
 
 
 
@@ -49,7 +48,8 @@ public class Main {
         Arrays.stream(c)
                 .boxed()//converted to integer obj
                 .distinct()
-                .sorted(Comparator.reverseOrder())  //.sorted((m,n)->-1)---only for reverse
+                .sorted((m,n)->-1) //---only for reverse
+                //.sorted(Comparator.reverseOrder())  //reverse with sorted order
                 .mapToInt(Integer::intValue) // integer to int
                 .forEach(k->System.out.print(k+" "));
 
@@ -81,6 +81,8 @@ public class Main {
                 .forEach(m->System.out.print(m+" "));
 
 */
+
+
 
 
     }
